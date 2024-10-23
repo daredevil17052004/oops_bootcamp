@@ -20,7 +20,7 @@ abstract class Vehicle{
     return model;
   }
 
-  puooblic void setModel(String model){
+  public void setModel(String model){
     this.model = model;  
   }
 
@@ -73,9 +73,9 @@ class Bike extends Vehicle{
   public void start(){
     System.out.println("The bike " + getBrand() + " " + getModel() + " is start    ing." );
   }
-
-  public void start(){
-    System.out.println("The bike " + getBrand() + " " + getModel() + " is start    ing." );
+  @Override
+  public void stop(){
+    System.out.println("The bike " + getBrand() + " " + getModel() + " is stoping");
   }
 
 
